@@ -1,38 +1,601 @@
-.App {
-  text-align: center;
+
+/****************************** NAVBAR STYLING START  ************************************/
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-bg {
+    background-color: lightgray ;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand{
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-collapse li {
+     padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-collapse li a {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-collapse li a:hover {
+    color: rgb(136, 63, 136) !important;
+    text-shadow: 0 2px 6px  rgb(179, 172, 179);
 }
+
+.btn-style{
+   width: 100px;
+   margin-right: 10px;
+   border-radius: 20px;
+   font-size: 17px;
+   color: white;
+   background-color: rgb(52, 51, 131);
+}
+
+.btn-style:hover {
+    color: white;
+    background-color: rgb(31, 97, 31);
+    box-shadow: 0 2px 5px 0 rgb(31, 97, 31);
+}
+
+/*********************** NAVBAR STYLING ENDED  ********************************/
+
+/************************ HEADER STYLING START *******************/
+header{
+    background-color: lightgray;
+    min-height: 100vh ;
+    width: 100%;
+}
+
+.main-hero-container{
+    height : 80vh ;
+    display: flex;
+}
+
+.header-left-side{
+    margin-top: 150px;
+}
+
+.main-hero-container h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.main-hero-para{
+    font-weight: lighter;
+}
+
+ .main-hero-images{
+    position: relative ;
+} 
+
+.main-hero-images img {
+    width: 70%;
+    height: 80%;
+    margin-top: 130px;
+    box-shadow:  0 2px 6px  rgba(0,0,0,0.4);
+    border-radius: 20px;
+    position: absolute;
+}
+
+.main-hero-images .image-2{
+    width: 42% ;
+    height: 30%;
+    left: 30%;
+    top: -36%;
+    box-shadow: 0 2px 6px  rgb(179, 172, 179);
+    position: relative;
+}
+
+.input-group{
+    position: relative !important;
+}
+
+ .form-control-text{
+    position: absolute ;
+    outline-style: none;
+    border: none;
+    height: 50px;
+    font-weight:lighter ;
+    
+}
+
+ .input-group-button{
+    position: absolute ;
+    right: 25%;
+    background-color: rgb(52, 51, 131);;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 2% ;
+    height: 50px;
+    width: 20%;
+    font-size: 15px;
+    border-radius: 25px !important;
+
+}
+/************************ HEADER STYLING ENDED *******************/
+/************************ HOW IT WORKS START *******************/
+
+.work-container{
+    width: 80vw;
+    padding: 30px;
+    box-shadow: 0 2px 6px  rgb(179, 172, 179);
+    margin-top: -5%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.work-container .main-heading{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 6rem;
+    word-spacing: 10px;
+}
+
+.work-container-subdiv{
+    padding: 0 20px;
+    margin-top: -8%;
+}
+
+.work-container .sub-heading{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.work-container .fontawesome-style{
+    font-size: 20px;
+    color: rgb(36, 36, 121);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(204, 203, 203);
+    display: grid;
+    text-align: center;
+    place-items: center;
+    margin: 20px auto;
+}
+
+/************************ HOW IT WORKS END *******************/
+/************************ OUR SERVICES WORKS START *******************/
+
+
+.our-services img{
+    width: 50%;
+    height: 60%;
+    margin-top: 120px;
+    box-shadow: 0 2px 6px  rgb(179, 172, 179);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.our-services-list{
+    margin-top: 50px;
+}
+
+.our-services .mini-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.our-services .main-heading{
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* .our-services-data{
+    padding-left: 30px;
+} */
+.our-services-data .heading-2{
+    font-size: 25px;
+}
+
+/* .our-services .our-services-number{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid rgb(52, 51, 131);
+   color: rgb(52, 51, 131);
+   display: grid;
+   place-items: center;
+   justify-content: center;
+   margin-top: 3px;
+} */
+
+.our-services-button{
+    color: rgb(52, 51, 131);
+    background-color: white;
+    margin-right: 75%;
+    margin-top: 15px;
+    height: 42px;
+    width: 20%;
+    font-size: 15px;
+    border-radius: 25px !important;
+    border: 2px solid rgb(52, 51, 131);
+    outline: none;
+    font-size: 20px;
+}
+
+/************************ OUR SERVICES WORKS END *******************/
+/************************ OUR SERVICES WORKS 2nd START *******************/
+
+.our-services-right-side-content{
+    padding-left: 80px;
+}
+
+.our-services-2nd-side{
+    margin-top: -3%;
+}
+
+/************************ OUR SERVICES WORKS 2ND END *******************/
+/************************ MONEY SECTION START *******************/
+.send-money-container{
+    margin-top: -3%;
+    padding: 50px;
+}
+
+.send-money-container .main-heading{
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.send-money-container-sub {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+    padding-left: 50px;
+    place-items: center;
+    box-shadow: 0 2px 6px  rgb(204, 203, 200);
+}
+
+.send-money-container-sub:hover{
+    background-color: lightgray;
+}
+
+.send-money-container-sub .sub-heading{
+    font-size: 20px;
+    font-weight: bold ;
+}
+
+.send-money-container-sub .fontawesome-style {
+    font-size: 20px;
+    color: rgb(36, 36, 121);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(204, 203, 203);
+    display: grid;
+    text-align: center;
+    place-items: center;
+    margin: 20px 0;
+}
+
+.send-money-container-sub:hover > .fontawesome-style{
+    background-color: white;
+}
+/************************ MONEY SECTION END *******************/
+/************************ CONTACT SECTION START *******************/
+.contact-us{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 70vh;
+}
+
+.main-contact-div{
+    padding: 70px 0;
+}
+
+.contact-us .main-heading{
+    font-size: 30px;
+}
+
+.contact-us .main-hero-para{
+    width: 80%;
+}
+
+.contact-left-side img{
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.contact-input{
+    margin-bottom: 30px;
+}
+
+.contact-us .our-services-button{
+     background-color: rgb(52, 51, 131);
+     color: white;
+}
+
+.contact-us .our-services-button:hover{
+    color: rgb(52, 51, 131);
+    background-color: white;
+}
+
+.form-control{
+    /* padding-top: 20px; */
+    border-radius: 15px;
+}
+
+/************************ CONTACT SECTION END *******************/
+/************************ FOOTER START *******************/
+.footer{
+    padding-top: 10px ;
+    background-color: #182334;
+    text-align: center;
+    align-items: center;
+}
+
+.footer .sub-heading{
+    color: white;
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
+
+.footer .main-hero-para{
+    color: white;
+    padding: 10px;
+} 
+
+.footer hr{
+    color: white;
+}
+
+.footer li{
+    cursor: pointer;
+}
+
+.footer .fontawesome-style{
+    display: flex;
+    font-size: 15px;
+    color: rgb(36, 36, 121);
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    place-items: center;
+    justify-content: center;    
+}
+
+.footer a{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 5px;
+    justify-content: start;
+    text-align: start;
+    place-items: start;
+}
+
+.footer ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.footer ul li a:hover{
+    color: blue;
+}
+
+/************************ FOOTER END *******************/
+
+/* MEDIA QUERIES START */
+@media(max-width : 1400px){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl{
+        max-width: 1400px;
+    }
+}
+
+@media(max-width : 998px){
+
+    /* navbar start */
+
+    
+    .navbar .navbar-collapse{
+        background-color: white;
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+
+    .navbar-collapse .nav-link{
+        font-size: 25px;
+        align-items: center;
+    }
+    .navbar-collapse .btn-style{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+    /* navbar end */
+    /* main hero start */
+
+    .main-hero-container{
+        width: 100%;
+    }
+
+    .main-hero-container .header-left-side{
+        /* margin-left: 10px; */
+        padding-left: 64px;
+        margin-top: 80px;    
+    }
+
+    .header-left-side img{
+        width: 60%;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .main-hero-container .input-group-button{
+        width: 100px;
+    }
+    .main-hero-container h1{
+        text-align: start;
+        font-size: 27px;
+    }
+
+    .main-hero-para{
+        font-size: 16px;
+        width: 100%;
+        padding-right: 20px;
+    }
+    /* main hero end */
+    /* howitworks portion start */
+
+    .work-container{
+        width: 100%;
+        /* width: 90vw; */
+        /* padding-left:  50px; */
+    }
+
+    .work-container .main-heading{
+        font-size: 27px;
+        margin-bottom: 48px;
+    }
+
+    .work-container .work-container-subdiv{
+        box-shadow: 0 2px 6px  rgb(179, 172, 179);
+        /* padding: 0px 0px; */
+        margin-bottom: 40px;
+        width: 80vw;
+        margin-left: 20px;
+        
+    }
+    /* howitworks portion end */
+    /* service first section start */
+    .our-services{
+        width: 100%;
+    }
+    
+    .our-services .our-service-left-side-image img{
+        margin-top: 60px;
+         width: 60%;
+         height: 70%;
+         text-align: center;
+    }
+    .our-services .our-services-list{
+        padding-left: 48px;
+    }
+
+    .our-services .our-services-button{
+        width: 150px;
+    }
+
+    /* service first section end */
+    /* service second section start */
+    .our-services .our-service-left-side-image-second img{
+        width: 60%;
+        height: 70%;
+        margin-left: 48px;
+    }
+    .our-services .our-services-list-second{
+        padding: 0px 0px 0px 48px;
+    }
+    /* service second section end */
+    /* send money section start */
+    .send-money-container{
+        width: 100%;
+    }
+    .send-money-container .send-money-container-sub{
+        width: 80vw;
+        /* margin-right: 15%; */
+        justify-content: start;
+        place-items: start;
+        box-shadow: 0 2px 6px  rgb(204, 203, 200);
+        margin-left: 0px;
+    }
+
+    .send-money-container .main-heading{
+        padding-top: 0px;
+        font-size: 25px;
+    }
+    /* send money section end */
+    /* contact section left side start */
+
+    .contact-us{
+        width: 100%;
+    }
+   
+    .contact-us .contact-left-side{
+        /* margin-left: 30px; */
+        margin-top: -22%;
+        padding-left: 48px;
+    }
+    .contact-us .main-heading{
+        font-size: 30px;
+        padding-left: 20px;
+        /* margin-left: 20px; */
+    }
+    .contact-us .main-hero-para{
+        margin-left: 20px;
+    }
+    .contact-us .contact-left-side img{
+        width: 60%;
+        height: 50%;
+        margin-left: 30px;
+        margin-top: 10px;
+        /* padding-left: 30px; */
+    }
+
+    /* contact section left side end */
+    /* contact section right side start */
+    .contact-us .contact-right-side{
+        margin-top: 70px;
+        width: 90%;
+         /* padding: 90px 0; */
+        /* margin-left: 30px;  */
+        padding-left: 35px;
+    }
+    .contact-right-side .main-hero-para{
+        width: 100%;
+    }
+    .contact-right-side .our-services-button{
+        width: 100px;
+    }
+    /* contact section right side end */
+    /* FOOTER SECTION START */
+    .footer{
+        margin-top: 350px;
+        width: 100%;
+    }
+    .footer a i {
+        margin-right: 100%;
+    }
+    /* FOOTER SECTION END */
+}
+/* MEDIA QUERIES END */
+
+
+
